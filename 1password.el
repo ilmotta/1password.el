@@ -113,7 +113,7 @@ see https://support.1password.com/command-line-getting-started/#get-started-with
         (when (string= .name "password")
           (when copy
             (kill-new .value)
-            (message "Password of %s copied: %s" name .value))
+            (message "Password of '%s' copied." name))
           (throw 'getpass .value))))))
 
 (provide '1password)
